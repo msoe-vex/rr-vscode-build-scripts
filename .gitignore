@@ -1,0 +1,5 @@
+# VSCode
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/run-docker.ps1
