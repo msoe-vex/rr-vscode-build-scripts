@@ -1,6 +1,6 @@
 $docker_command = "docker run -it"
 $workspace_root = $PSScriptRoot -replace "[\\/]\.vscode", ""
-$docker_vol_location = -join(" -v ", $workspace_root, ":/root/ChangeUp" + " -v ", $workspace_root, "/src/v5_hal/firmware/lib/include:/root/ChangeUp/src/v5_hal/firmware/include/lib_include", " -v ", $workspace_root, "/src/v5_hal/firmware/lib/src:/root/ChangeUp/src/v5_hal/firmware/src/lib_src", " raiderrobotics/container-registry:rr-noetic-base")
+$docker_vol_location = -join(" -v ", "$workspace_root", ":/root/ChangeUp raiderrobotics/container-registry:rr-noetic-base")
 Write-Host $docker_vol_location
 $docker_container_command = -join(" sh -c 'cd /root/ChangeUp;", $args[0], "'")
 
