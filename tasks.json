@@ -37,10 +37,10 @@
         {
             "label": "prosv5 Build",
             "type": "shell",
-            "windows": { "command": "./.vscode/run_docker.ps1 'cd src/v5_hal/firmware && prosv5 build'" },
-            "linux": { "command": "pwsh ./.vscode/run_docker.ps1 'cd src/v5_hal/firmware && prosv5 build'" },
+            "windows": { "command": "./.vscode/run_docker.ps1 'prosv5 build'" },
+            "linux": { "command": "pwsh ./.vscode/run_docker.ps1 'prosv5 build'" },
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${workspaceFolder}/src/v5_hal/firmware"
             },
             "problemMatcher": {
                 "owner": "prosv5",
