@@ -156,7 +156,7 @@
 	{
             "label": "v5_hal Firmware Build (WSL)",
             "type": "shell",
-            "command": "catkin_make v5_hal_firmware_build",
+            "command": "source /opt/ros/noetic/setup.bash && catkin_make v5_hal_firmware_build",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
@@ -183,7 +183,7 @@
 	{
             "label": "v5_hal Firmware Clean (WSL)",
             "type": "shell",
-            "command": "catkin_make v5_hal_firmware_clean_all",
+            "command": "source /opt/ros/noetic/setup.bash && catkin_make v5_hal_firmware_clean_all",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
@@ -219,7 +219,7 @@
 	{
             "label": "v5_hal Firmware WSL Upload (WSL)",
             "type": "shell",
-            "command": "catkin_make v5_hal_firmware_wsl_upload",
+            "command": "source /opt/ros/noetic/setup.bash && catkin_make v5_hal_firmware_wsl_upload",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
